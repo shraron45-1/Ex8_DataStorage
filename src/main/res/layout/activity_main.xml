@@ -4,86 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
-
-    <LinearLayout
+    <Button
+        android:id="@+id/force_offline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/createDatebase"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="创建"
-            app:layout_constraintBottom_toTopOf="@+id/guideline10"
-            app:layout_constraintStart_toStartOf="@+id/guideline11"
-            app:layout_constraintTop_toTopOf="@+id/guideline10" />
+        android:text="Send force offline broadcast" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="34dp" />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_begin="41dp" />
-
-        <Button
-            android:id="@+id/add_book"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="添加数据"
-            app:layout_constraintBottom_toTopOf="@+id/guideline10"
-            app:layout_constraintStart_toStartOf="@+id/guideline12"
-            app:layout_constraintTop_toTopOf="@+id/guideline10" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_begin="275dp" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="4"
-            android:text="书籍名称"
-            android:textSize="20dp"
-            android:layout_marginLeft="10dp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="书籍种类"
-            android:textSize="20dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="25dp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="价格"
-            android:textSize="20dp"
-            android:textAlignment="center"
-            android:layout_marginRight="10dp"/>
-    </LinearLayout>
-    <ListView
-        android:id="@+id/list_book"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 </LinearLayout>
